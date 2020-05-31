@@ -8,7 +8,8 @@ npm install --save react-router-dom : for routing
 
 npm install --save @material-ui/icons and npm install --save @material-ui/core : for sidedrawer
 
-Best Practices:
+Best Practices used:
+
 1) structured folder structure.
 2) Proper naming convention used in naming file, function and variables.
 3) Used comments wherever needed for better clarity of code.
