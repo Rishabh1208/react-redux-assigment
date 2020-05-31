@@ -1,7 +1,11 @@
 Libraries used:
+
 npm i --save redux react-redux : react-redux for connecting redux store to react and redux for state management
+
 npm install --save react-bootstrap bootstrap : for styling and responsiveness
+
 npm install --save react-router-dom : for routing
+
 npm install --save @material-ui/icons and npm install --save @material-ui/core : for sidedrawer
 
 Best Practices:
