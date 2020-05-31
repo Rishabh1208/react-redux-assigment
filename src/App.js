@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import SideDrawer from './components/presentational/sideDrawer';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import InventoryListTable from './components/container/table';
+import AddProduct from './components/container/addProduct';
 
+// Adding routing to the application
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div>
+			<BrowserRouter>
+				<SideDrawer />
+				<Switch>
+					<Route path='/list' component={InventoryListTable} />
+					<Route path='/addproduct' component={AddProduct} />
+				</Switch>
+			</BrowserRouter>
+		</div>
+	);
 }
 
 export default App;
